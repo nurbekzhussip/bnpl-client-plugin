@@ -1,0 +1,140 @@
+.app{
+    padding: 36px;
+    font-family: 'Helvetica Neue', arial, sans-serif;
+    font-weight: 400;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 400px;
+    overflow: auto;
+}
+.dark{
+    color:#fff;
+}
+.light{
+    color: #444;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 16px;
+}
+
+.prepaymentInfo{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #00A755;
+    margin:16px 0;
+}
+
+.stepperWrapper {
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.stepperItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex:1;
+}
+
+.stepperItem::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #B5BBC2;
+    width: 100%;
+    top: 5px;
+    right: 100%;
+    z-index: 2;
+}
+
+.stepperItem::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #B5BBC2;
+    width: 100%;
+    top: 5px;
+    left: 0%;
+    z-index: 2;
+}
+
+.stepCounter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border:1px solid #4bb543;
+    margin-bottom: 6px;
+}
+
+.stepperItem.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #4bb543;
+    width: 100%;
+    top: 5px;
+    left: 0%;
+    z-index: 3;
+}
+
+.stepperItem.completed >.stepCounter{
+    background-color: #4bb543;
+    width: 12px;
+    height: 12px;
+}
+
+.stepperItem:first-child::before {
+    content: none;
+}
+.stepperItem:last-child::after {
+    content: none;
+}
+
+.stepName{
+    margin-bottom: 20px;
+}
+
+.stepName>h4{
+    color: #6D7986;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 4px 0;
+}
+
+.stepName>span{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.line{
+    border-bottom:1px solid #B5BBC2;
+    margin-bottom: 12px;
+}
+
+.totalAmount{
+    display: flex;
+    justify-content: space-between;
+    color: #00A755;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.totalAmountLabel{
+    color:#B5BBC2
+}
