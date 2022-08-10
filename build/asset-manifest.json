@@ -1,0 +1,7 @@
+{
+  "bundle.css": "bnpl-plugin.css",
+  "bundle.js": "bnpl-plugin.bundle.js",
+  "bundle.js.map": "bnpl-plugin.bundle.js.map",
+  "polyfills.js": "bnpl-plugin.polyfills.js",
+  "polyfills.js.map": "bnpl-plugin.polyfills.js.map"
+}

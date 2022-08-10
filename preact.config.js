@@ -16,13 +16,4 @@ export default (config) => {
             ignoreOrder: false,
         })
     );
-    //
-    // config.module = {
-    //     rules: [
-    //         {
-    //             test: /\.css$/i,
-    //             use: [MiniCssExtractPlugin.loader, "css-loader"],
-    //         }
-    //     ],
-    // }
 }
