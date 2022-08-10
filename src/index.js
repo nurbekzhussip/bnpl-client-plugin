@@ -1,7 +1,7 @@
 import {h, render} from "preact";
 import App from "./components/app";
 
-class ITest {
+class PaymentSchedule {
     destroy(){
         render(null,window.document.querySelector('#root') );
     }
@@ -10,5 +10,7 @@ class ITest {
         render(h(App, props), window.document.querySelector('#root'));
     }
 }
+const plugin = new PaymentSchedule()
+plugin.render({totalAmount:155000})
 
-export default ITest
+export default PaymentSchedule
