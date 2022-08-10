@@ -10,6 +10,7 @@ class PaymentSchedule {
         render(h(App, props), window.document.querySelector('#root'));
     }
 }
+
 const plugin = new PaymentSchedule()
 plugin.render({totalAmount:155000})
 
