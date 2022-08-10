@@ -11,7 +11,4 @@ class PaymentSchedule {
     }
 }
 
-const plugin = new PaymentSchedule()
-plugin.render({totalAmount:155000})
-
 export default PaymentSchedule
