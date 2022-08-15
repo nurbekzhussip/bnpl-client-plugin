@@ -15,7 +15,7 @@
   <script defer>
     document.addEventListener("DOMContentLoaded", () => {
       const t = new BNPL.PaymentSchedule();
-      t.render({ totalAmount: 50001 });
+      t.render({ elemId:'bnpl-plugin', totalAmount: 120000 });
     });
   </script>
 </body>
