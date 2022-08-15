@@ -4,10 +4,10 @@
 ```
 <head>
   <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/nurbekzhussip/bnpl-plugin@develop/build/bnpl-plugin.css"
+      href="https://cdn.jsdelivr.net/gh/nurbekzhussip/bnpl-plugin@0.0.2/build/bnpl-plugin.css"
     />
   <script defer="defer"
-      src="https://cdn.jsdelivr.net/gh/nurbekzhussip/bnpl-plugin@develop/build/bnpl-plugin.bundle.js"
+      src="https://cdn.jsdelivr.net/gh/nurbekzhussip/bnpl-plugin@0.0.2/build/bnpl-plugin.bundle.js"
     ></script>
  </head>
  <body>
