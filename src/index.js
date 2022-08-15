@@ -2,11 +2,11 @@ import {h, render} from "preact";
 import App from "./components/app";
 
 export class PaymentSchedule {
-    destroy(){
-        render(null,window.document.querySelector('#bnpl-plugin') );
+    destroy(elemId){
+        render(null,window.document.querySelector(`#${elemId}`) );
     }
 
     render(props){
-        render(h(App, props), window.document.querySelector('#bnpl-plugin'));
+        render(h(App, props), window.document.querySelector(`#${props?.elemId}`));
     }
 }
