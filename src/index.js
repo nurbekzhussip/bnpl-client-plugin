@@ -10,3 +10,6 @@ export class PaymentSchedule {
         render(h(App, props), window.document.querySelector('#bnpl-plugin'));
     }
 }
+
+const plugin = new PaymentSchedule()
+plugin.render({totalAmount:120000})
