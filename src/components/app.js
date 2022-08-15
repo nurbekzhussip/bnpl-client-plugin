@@ -4,6 +4,11 @@ import {moneyFormatter} from "../utils/formatters";
 import s from './style.css'
 
 const App = ({theme='light',totalAmount}) => {
+	const params = (new URL(document.location)).searchParams;
+	if(params.get('total')){
+		totalAmount = params.get('total')
+	}
+
 	const date = new Date();
 	const average_payment = Math.floor(totalAmount/4);
 	const first_payment = totalAmount - average_payment*3
