@@ -1,5 +1,21 @@
 # payment-schedule
 
+## Usage
+``` bash
+# create new instance
+const plugin = new Factoring004.PaymentSchedule({ elemId:'bnpl-plugin', totalAmount: 120000 })
+
+# render plugin
+plugin.render()
+
+# if changed parent id you can use
+plugin.renderTo('elemId')
+
+# destroy app
+plugin.destroy()
+```
+
+
 ## Example
 ```
 <head>
@@ -14,8 +30,8 @@
   <div id="bnpl-plugin"></div>
   <script defer>
     document.addEventListener("DOMContentLoaded", () => {
-      const t = new BNPL.PaymentSchedule();
-      t.render({ elemId:'bnpl-plugin', totalAmount: 120000 });
+      const plugin = new Factoring004.PaymentSchedule({ elemId:'bnpl-plugin', totalAmount: 120000 });
+      plugin.render();
     });
   </script>
 </body>
