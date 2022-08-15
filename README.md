@@ -1,5 +1,29 @@
 # payment-schedule
 
+## Example
+```
+<head>
+  <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/nurbekzhussip/bnpl-plugin@develop/build/bnpl-plugin.css"
+    />
+  <script defer="defer"
+      src="https://cdn.jsdelivr.net/gh/nurbekzhussip/bnpl-plugin@develop/build/bnpl-plugin.bundle.js"
+    ></script>
+ </head>
+ <body>
+  <div id="bnpl-plugin"></div>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      const t = new BNPL.PaymentSchedule();
+      t.render({ totalAmount: 50001 });
+    });
+  </script>
+</body>
+```
+
+
+
+
 ## CLI Commands
 
 ``` bash
