@@ -1,7 +1,7 @@
 # payment-schedule
 
 ## Example
-```
+``` bash
 <head>
   # connect bnpl-plugin.css
   <link rel="stylesheet"
