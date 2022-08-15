@@ -3,11 +3,10 @@ import App from "./components/app";
 
 export class PaymentSchedule {
     destroy(){
-        render(null,window.document.querySelector('#root') );
+        render(null,window.document.querySelector('#bnpl-plugin') );
     }
 
     render(props){
-        render(h(App, props), window.document.querySelector('#root'));
+        render(h(App, props), window.document.querySelector('#bnpl-plugin'));
     }
 }
-
