@@ -1,7 +1,7 @@
 import {h, render} from "preact";
 import App from "./components/app";
 
-class PaymentSchedule {
+export class PaymentSchedule {
     destroy(){
         render(null,window.document.querySelector('#root') );
     }
@@ -11,4 +11,3 @@ class PaymentSchedule {
     }
 }
 
-export default PaymentSchedule

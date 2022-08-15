@@ -147,3 +147,9 @@
 .tooltip{
     display: inline-block;
 }
+
+@media only screen and (max-width: 600px) {
+    .app {
+        padding: 36px 0;
+    }
+}

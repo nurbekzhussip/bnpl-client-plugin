@@ -6,7 +6,7 @@ export default (config) => {
     config.output = {
         path: path.resolve(__dirname, 'build'),
         filename: 'bnpl-plugin.[name].js',
-        library: 'MyApp',
+        library: 'BNPL',
         libraryTarget: 'umd',
     }
 
