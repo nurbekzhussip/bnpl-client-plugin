@@ -2,11 +2,19 @@ import {h, render} from "preact";
 import App from "./components/app";
 
 export class PaymentSchedule {
-    destroy(elemId){
-        render(null,window.document.querySelector(`#${elemId}`) );
+    constructor(props) {
+        this.config = props
     }
 
-    render(props){
-        render(h(App, props), window.document.querySelector(`#${props?.elemId}`));
+    destroy(){
+        render(null,window.document.querySelector(`#${this.config.elemId}`) );
+    }
+
+    render(){
+        render(h(App, this.config), window.document.querySelector(`#${this.config?.elemId}`));
+    }
+
+    renderTo(elemId){
+        render(h(App, this.config), window.document.querySelector(`#${elemId}`));
     }
 }
