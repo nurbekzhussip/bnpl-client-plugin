@@ -2,6 +2,7 @@ import {MONTHS} from "../utils/constants";
 import {moneyFormatter} from "../utils/formatters";
 
 import s from './style.css'
+import {addMonthsToDate, getShortDate} from "../utils/helpers";
 
 const App = ({theme='light',totalAmount}) => {
 	const params = (new URL(document.location)).searchParams;
@@ -9,9 +10,19 @@ const App = ({theme='light',totalAmount}) => {
 		totalAmount = params.get('total')
 	}
 
-	const date = new Date();
+	let date = new Date();
+
+	if(params.get('date')){
+		date = new Date(params.get('date'))
+	}
+
 	const average_payment = Math.floor(totalAmount/4);
 	const first_payment = totalAmount - average_payment*3
+
+	const date1 = addMonthsToDate(date, 1)
+	const date2 = addMonthsToDate(date1, 1)
+	const date3 = addMonthsToDate(date2, 1)
+	const date4 = addMonthsToDate(date3, 1)
 
 	return (
 		<div class={`${s.app} ${theme === 'dark' ? s.dark : s.light}`}>
@@ -27,35 +38,35 @@ const App = ({theme='light',totalAmount}) => {
 				<div class={`${s.stepperItem} ${s.completed}`}>
 					<div class={s.stepCounter} />
 					<div class={s.stepName}>
-						<h4>{`${date.getDate()} ${MONTHS[(date.getMonth())%12]}`}</h4>
+						<h4>{getShortDate(date)}</h4>
 						<span>{moneyFormatter.format(0)}</span>
+					</div>
+				</div>
+				<div className={s.stepperItem}>
+					<div className={s.stepCounter}/>
+					<div className={s.stepName}>
+						<h4>{getShortDate(date1)}</h4>
+						<span>{moneyFormatter.format(first_payment)}</span>
 					</div>
 				</div>
 				<div className={s.stepperItem}>
 					<div className={s.stepCounter} />
 					<div className={s.stepName}>
-						<h4>{`${date.getDate()} ${MONTHS[(date.getMonth() + 1) % 12]}`}</h4>
-						<span>{moneyFormatter.format(first_payment)}</span>
-					</div>
-				</div>
-				<div class={s.stepperItem}>
-					<div class={s.stepCounter} />
-					<div className={s.stepName}>
-						<h4>{`${date.getDate()} ${MONTHS[(date.getMonth()+2)%12]}`}</h4>
+						<h4>{getShortDate(date2)}</h4>
 						<span>{moneyFormatter.format(average_payment)}</span>
 					</div>
 				</div>
 				<div class={s.stepperItem}>
 					<div class={s.stepCounter} />
 					<div className={s.stepName}>
-						<h4>{`${date.getDate()} ${MONTHS[(date.getMonth()+3)%12]}`}</h4>
+						<h4>{getShortDate(date3)}</h4>
 						<span>{moneyFormatter.format(average_payment)}</span>
 					</div>
 				</div>
 				<div class={s.stepperItem}>
 					<div class={s.stepCounter} />
 					<div className={s.stepName}>
-						<h4>{`${date.getDate()} ${MONTHS[(date.getMonth()+4)%12]}`}</h4>
+						<h4>{getShortDate(date4)}</h4>
 						<span>{moneyFormatter.format(average_payment)}</span>
 					</div>
 				</div>
