@@ -9,7 +9,8 @@ const plugin = new Factoring004.PaymentSchedule({ elemId:'bnpl-plugin', totalAmo
 plugin.render()
 
 # if changed parent id you can use
-plugin.renderTo('elemId')
+const elem = document.createElement('div');
+plugin.renderTo(elem)
 
 # destroy app
 plugin.destroy()
