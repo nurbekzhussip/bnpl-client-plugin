@@ -1,5 +1,6 @@
 import {moneyFormatter} from "../utils/formatters";
 import {addMonthsToDate, getShortDate} from "../utils/helpers";
+
 import s from './style.css'
 
 const App = ({theme='light',totalAmount}) => {
