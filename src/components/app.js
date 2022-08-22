@@ -2,8 +2,8 @@ import {moneyFormatter} from "../utils/formatters";
 import {addMonthsToDate, getShortDate} from "../utils/helpers";
 import s from './style.css'
 
-const App = ({theme='light',totalAmount}) => {
-	const date = new Date();
+const App = ({theme='light',totalAmount, startDate=''}) => {
+	const date = startDate ? new Date(startDate) : new Date();
 
 	const average_payment = Math.floor(totalAmount/4);
 	const first_payment = totalAmount - average_payment*3
