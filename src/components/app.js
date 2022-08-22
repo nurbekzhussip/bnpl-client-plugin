@@ -1,8 +1,7 @@
-import {MONTHS} from "../utils/constants";
 import {moneyFormatter} from "../utils/formatters";
+import {addMonthsToDate, getShortDate} from "../utils/helpers";
 
 import s from './style.css'
-import {addMonthsToDate, getShortDate} from "../utils/helpers";
 
 const App = ({theme='light',totalAmount}) => {
 	const params = (new URL(document.location)).searchParams;
