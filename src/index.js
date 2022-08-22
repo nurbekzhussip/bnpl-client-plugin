@@ -14,7 +14,7 @@ export class PaymentSchedule {
         render(h(App, this.config), window.document.querySelector(`#${this.config?.elemId}`));
     }
 
-    renderTo(elemId){
-        render(h(App, this.config), elemId);
+    renderTo(elem){
+        render(h(App, this.config), elem);
     }
 }
