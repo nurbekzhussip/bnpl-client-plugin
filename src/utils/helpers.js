@@ -9,5 +9,5 @@ export const addMonthsToDate = (_date,_noOfMonths) => {
 }
 
 export const getShortDate = (date) => {
-    return date.getDate() + ' ' + MONTHS[(date.getMonth())%12]
+    return date.getDate() + ' ' + MONTHS[(date.getMonth())]
 }
