@@ -21,10 +21,17 @@ plugin.destroy()
 ```
 <head>
   <link rel="stylesheet"
+<<<<<<< HEAD
       href="https://cdn.jsdelivr.net/gh/nurbekzhussip/bnpl-plugin@0.0.6/build/bnpl-plugin.css"
     />
   <script defer="defer"
       src="https://cdn.jsdelivr.net/gh/nurbekzhussip/bnpl-plugin@0.0.6/build/bnpl-plugin.bundle.js"
+=======
+      href="https://cdn.jsdelivr.net/gh/nurbekzhussip/bnpl-plugin@0.0.5/build/bnpl-plugin.css"
+    />
+  <script defer="defer"
+      src="https://cdn.jsdelivr.net/gh/nurbekzhussip/bnpl-plugin@0.0.5/build/bnpl-plugin.bundle.js"
+>>>>>>> a85178ddd3ed9ef7b6f6965d436d5d6f3327edfc
     ></script>
  </head>
  <body>
