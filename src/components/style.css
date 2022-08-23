@@ -22,13 +22,15 @@
 }
 
 .prepaymentInfo{
-    display: flex;
-    justify-content: space-between;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: #00A755;
     margin:16px 0;
+}
+
+.prepaymentInfo>span:first-child{
+    margin-right: 16px;
 }
 
 .stepperWrapper {

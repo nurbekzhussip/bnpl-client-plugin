@@ -1,40 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>payment-schedule</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
-    <link rel="manifest" href="manifest.json" />
-    <link
-      href="bundle.fe53b.css"
-      rel="stylesheet"
-      media="only x"
-      onload="this.media='all'"
-    />
-    <noscript><link rel="stylesheet" href="bundle.fe53b.css" /></noscript>
-    <link
-      href="bnpl-plugin.css"
-      rel="stylesheet"
-      media="only x"
-      onload="this.media='all'"
-    />
-    <noscript><link rel="stylesheet" href="bnpl-plugin.css" /></noscript>
-  </head>
-  <body>
-    <div id="bnpl-plugin"></div>
-    <script defer="defer" src="bnpl-plugin.bundle.js"></script>
-    <script nomodule="" src="bnpl-plugin.polyfills.js"></script>
-    <script defer>
-        document.addEventListener("DOMContentLoaded", () => {
-            const elem = document.createElement('div');
-            elem.setAttribute("id", "Div1");
-            const plugin = new Factoring004.PaymentSchedule({ elemId:'bnpl-plugin', totalAmount: 120000 });
-            plugin.renderTo(elem);
-            document.body.appendChild(elem)
-        });
-    </script>
-  </body>
-</html>
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><title>payment-schedule</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png"><link rel="manifest" href="manifest.json"><link href="bundle.3ad7e.css" rel="stylesheet" media="only x" onload="this.media='all'"><noscript><link rel="stylesheet" href="bundle.3ad7e.css"></noscript><link href="bnpl-plugin.css" rel="stylesheet" media="only x" onload="this.media='all'"><noscript><link rel="stylesheet" href="bnpl-plugin.css"></noscript></head><body><div id="bnpl-plugin"></div><script defer="defer" src="bnpl-plugin.bundle.js"></script><script nomodule="" src="bnpl-plugin.polyfills.js"></script><script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+        const elem = document.createElement('div');
+        elem.setAttribute("id", "Div1");
+        const plugin = new Factoring004.PaymentSchedule({ elemId:'bnpl-plugin', totalAmount: 120000 });
+        plugin.renderTo(elem);
+        document.body.appendChild(elem)
+    });
+</script></body></html>
